@@ -10,9 +10,9 @@ interface CounterProps {
 
 export default function Counter(props: CounterProps) {
   const [count, setCount] = useState(props.start);
-  const btn = tw`px-2 py-1 border(gray-100 1) hover:bg-gray-200`;
+  const btn = tw`px-2 py-1 border(gray-100 1) text-white rounded cursor-pointer focus:outline-none `; 
   return (
-    <div class={tw`flex gap-2 w-full`}>
+    <div class={tw`flex gap-2 w-full text-white`}>
       <p class={tw`flex-grow-1 font-bold text-xl`}>{count}</p>
       <button
         class={btn}
